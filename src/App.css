@@ -1,0 +1,485 @@
+/* ==================================================
+   GENERAL PAGE
+   ================================================== */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e9ecf0;
+  color: #202123;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* ==================================================
+   MAIN APPLICATION
+   ================================================== */
+
+.app {
+  min-height: 100vh;
+  background-color: #f4f6f8;
+}
+
+
+/* ==================================================
+   NAVIGATION
+   ================================================== */
+
+nav {
+  width: 100%;
+  background-color: #202123;
+
+  padding: 15px 25px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+/* Logged-in user */
+
+.logged-in-user {
+  color: white;
+
+  font-weight: bold;
+
+  margin-right: 20px;
+
+  padding: 10px 15px;
+
+  border-right: 1px solid #555;
+}
+
+
+/* Navigation links */
+
+nav a {
+  color: white;
+
+  text-decoration: none;
+
+  padding: 10px 15px;
+
+  border-radius: 6px;
+
+  transition: background-color 0.2s;
+}
+
+
+/* Navigation hover */
+
+nav a:hover {
+  background-color: #1cb5bd;
+}
+
+
+/* ==================================================
+   LOGOUT BUTTON
+   ================================================== */
+
+nav button {
+  margin-left: auto;
+
+  padding: 10px 18px;
+
+  background-color: #bc80ce;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+}
+
+nav button:hover {
+  background-color: #555766;
+}
+
+
+/* ==================================================
+   MAIN PAGE CONTENT
+   This matches the <div> used by your
+   Dashboard, Books, Transactions and Users.
+   ================================================== */
+
+.app > div:not(nav) {
+  background-color: rgb(142, 199, 240);
+
+  width: 90%;
+
+  max-width: 1200px;
+
+  margin: 30px auto;
+
+  padding: 30px;
+
+  border-radius: 12px;
+
+  min-height: 500px;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ==================================================
+   HEADINGS
+   ================================================== */
+
+h2 {
+  margin-top: 0;
+
+  font-size: 28px;
+
+  color: white;
+}
+
+h3 {
+  font-size: 21px;
+
+  color: white;
+
+  margin-top: 25px;
+}
+
+
+/* ==================================================
+   TEXT
+   ================================================== */
+
+p {
+  line-height: 1.6;
+}
+
+
+/* ==================================================
+   INPUTS
+   ================================================== */
+
+input,
+select {
+  padding: 11px 12px;
+
+  width: 250px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 6px;
+
+  background-color: white;
+
+  font-size: 14px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+
+  border: 2px solid #10a37f;
+}
+
+
+/* ==================================================
+   BUTTONS
+   ================================================== */
+
+button {
+  padding: 10px 18px;
+
+  margin: 5px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background-color: #10a37f;
+
+  color: white;
+
+  cursor: pointer;
+
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #0d8f70;
+}
+
+
+/* ==================================================
+   TABLE
+   ================================================== */
+
+table {
+  width: 95%;
+
+  margin: 25px auto;
+
+  border-collapse: collapse;
+
+  background-color: white;
+
+  border-radius: 8px;
+
+  overflow: hidden;
+}
+
+th {
+  background-color: #343541;
+
+  color: white;
+
+  font-weight: bold;
+}
+
+th,
+td {
+  border: 1px solid #d9d9d9;
+
+  padding: 12px;
+
+  text-align: center;
+}
+
+td {
+  color: #202123;
+}
+
+
+/* Table hover */
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+/* ==================================================
+   LOW STOCK
+   ================================================== */
+
+tbody tr[style*="rgb(255, 204, 204)"] {
+  background-color: #9c1a1a !important;
+}
+
+
+/* =========================
+   LOGIN PAGE
+ /* ==================================================
+   LOGIN PAGE
+   ================================================== */
+
+/* ==================================================
+   LOGIN PAGE
+   ================================================== */
+
+#root > div:not(.app) {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #15c1bc;
+  text-align: center;
+}
+
+/* Login heading */
+#root > div:not(.app) h2 {
+  color: #343541;
+  margin-bottom: 10px;
+}
+
+/* Login text */
+#root > div:not(.app) p {
+  margin: 5px 0 15px;
+}
+
+/* Login input */
+#root > div:not(.app) input {
+  display: block;
+  width: 280px !important;
+  padding: 11px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: white;
+}
+
+/* Login button */
+#root > div:not(.app) button {
+  display: block;
+  margin: 15px auto;
+  padding: 10px 25px;
+  background-color: #1c88a6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#root > div:not(.app) button:hover {
+  background-color: #146d85;
+}
+/* ==================================================
+   SUCCESS MESSAGE
+   ================================================== */
+
+.success-message {
+  background-color: #c4c3c4;
+
+  color: #2e7d32;
+
+  padding: 10px 15px;
+
+  border-radius: 6px;
+
+  font-weight: bold;
+
+  display: inline-block;
+}
+
+
+/* ==================================================
+   ERROR / NEGATIVE MESSAGE
+   ================================================== */
+
+.error-message {
+  background-color: #ffebee;
+
+  color: #c62828;
+
+  padding: 10px 15px;
+
+  border-radius: 6px;
+
+  font-weight: bold;
+
+  display: inline-block;
+}
+
+
+/* ==================================================
+   MOBILE
+   ================================================== */
+
+@media (max-width: 700px) {
+
+  nav {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .logged-in-user {
+    margin-right: 0;
+
+    border-right: none;
+
+    border-bottom: 1px solid #555;
+
+    text-align: center;
+  }
+
+  nav a {
+    text-align: center;
+  }
+
+  nav button {
+    margin-left: 0;
+  }
+
+  .app > div:not(nav) {
+    width: 95%;
+
+    padding: 20px;
+
+    margin: 20px auto;
+  }
+
+  table {
+    width: 100%;
+
+    font-size: 12px;
+
+    overflow-x: auto;
+  }
+
+  input,
+  select {
+    width: 90%;
+  }
+}
+
+
+/* Negative messages */
+p[style*="color: red"],
+p.error-message {
+  color: #d32f2f !important;
+  background-color: #ffebee !important;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+
+/* Member Library Activity */
+.member-activity {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 500px;
+}
+
+/* ==================================================
+   CENTER MAIN CONTENT
+   ================================================== */
+
+.app > div:not(nav) {
+  text-align: center;
+}
+
+/* Center headings and paragraphs */
+.app > div:not(nav) h2,
+.app > div:not(nav) h3,
+.app > div:not(nav) p {
+  text-align: center;
+}
+
+/* Center forms and inputs */
+.app > div:not(nav) input,
+.app > div:not(nav) select {
+  display: block;
+  margin: 10px auto;
+}
+
+/* Center buttons */
+.app > div:not(nav) button {
+  display: inline-block;
+  margin: 8px;
+}
+
+/* Center tables */
+.app > div:not(nav) table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Member section */
+.member-activity {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 500px;
+}
